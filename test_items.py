@@ -8,7 +8,7 @@ from selenium.common.exceptions import NoSuchElementException
 def test_find_button_add_to_basket(browser):
     browser.get('http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/')
 
-    time.sleep(5)
+    time.sleep(30)
 
     WebDriverWait(browser, 30).until(
         EC.element_to_be_clickable((By.CLASS_NAME, "btn-add-to-basket"), )
